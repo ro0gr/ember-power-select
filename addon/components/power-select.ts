@@ -6,6 +6,7 @@ import { addObserver, removeObserver } from '@ember/object/observers';
 import { scheduleOnce } from '@ember/runloop';
 import { isEqual } from '@ember/utils';
 import { assert } from '@ember/debug';
+import type { MatcherFn } from '../utils/group-utils';
 import {
   indexOfOption,
   filterOptions,
@@ -16,7 +17,6 @@ import {
   defaultMatcher,
   defaultTypeAheadMatcher,
   pathForOption,
-  MatcherFn
 } from '../utils/group-utils';
 // @ts-ignore
 import { restartableTask, timeout } from 'ember-concurrency';
